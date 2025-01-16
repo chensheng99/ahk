@@ -52,11 +52,14 @@ MeiKeDu_T() {
     MouseMove(710,270)
 }
 
-F4:: {
+!z:: {
     ; 设置鼠标为屏幕坐标模式
     CoordMode("Mouse", "Screen")
     MouseMove(1480, 1000)
     Click       
     Sleep(300)
     MeiKeDu_T()
+    MouseMove(700, 200)
+    Sleep(200)
+    Click
 }

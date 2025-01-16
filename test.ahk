@@ -61,16 +61,35 @@ F7::
     MouseMove(1400, 210) ; 移动鼠标
     Click 
     Sleep(100)
-    Send("^e")  ; 模拟按下 Ctrl + E
-    Sleep(3000)
-    MouseMove(100, 50) ; 移动鼠标
-    Click
-    MouseMove(230, 160) ; 移动鼠标
-    Sleep(3000)
-    Click 2  ; 模拟鼠标双击
-    MouseMove(230, 400) ; 移动鼠标
-    Sleep(3000)
-    Click 2  ; 模拟鼠标双击
-    Sleep(300)
+    Send("^e")  ; Ctrl + E 替换内容
+    Sleep(1000)
+    ; Alt + ↑ 返回上一层文件夹
+    Send("!{Up}")
+    MouseMove(200, 140) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 160) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 180) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 200) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 220) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 240) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 260) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 280) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 300) ; 移动鼠标
+    Sleep(1000)
+    MouseMove(200, 320) ; 移动鼠标
+    Sleep(1000)
+    ; Sleep(3000)
+    ; Click 2  ; 模拟鼠标双击
+    ; MouseMove(230, 400) ; 移动鼠标
+    ; Sleep(3000)
+    ; Click 2  ; 模拟鼠标双击
+    ; Sleep(300)
     ; MeiKeDu_T()
 }

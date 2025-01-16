@@ -47,4 +47,7 @@ F7:: {
     MouseMove(1480, 1000)
     Click       
     MeiKeDu_M()
+    MouseMove(700, 200)
+    Sleep(200)
+    Click
 }
