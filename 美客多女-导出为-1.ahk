@@ -5,8 +5,8 @@ PressCtrlShiftAltA() {
     Send("{Ctrl down}{Shift down}{Alt down}a{Alt up}{Shift up}{Ctrl up}")
 }
 
-; 斌哥图片的导出
-BinGe() {
+; 美客多-女的导出
+MeiKeDu_N() {
     ; 第一次点击：X=1400, Y=275
     MouseMove(1400, 250) ; 移动鼠标到 X=1400, Y=275
     Sleep(100) ; 等待鼠标稳定
@@ -17,7 +17,7 @@ BinGe() {
     Sleep(100) ; 稍作等待
 
     ; 第二次点击：X=1400, Y=400
-    MouseMove(1400, 370) ; 移动鼠标到 X=1400, Y=400
+    MouseMove(1400, 470) ; 移动鼠标到 X=1400, Y=400
     Sleep(100)
     Click               ; 模拟点击
 
@@ -29,27 +29,25 @@ BinGe() {
     Sleep(200)
     PressCtrlShiftAltA()
 
-    Sleep(1200)
-    ; Sleep(1000)
+    Sleep(2500)
     ; 第二次点击：X=1400, Y=400
     MouseMove(1570, 960) ; 移动鼠标到 X=1400, Y=400
     Sleep(100)
     Click               ; 模拟点击
-    
-    Sleep(300)
-    ; Alt + ↑ 返回上一层文件夹
-    Send("!{Up}")
+
+    ; 第二次点击：X=1400, Y=400
+    MouseMove(190, 100) ; 移动鼠标到 X=1400, Y=400
+    Sleep(100)
+    Click               ; 模拟点击
 }
 
-
-F5:: {
+^Numpad1:: {
     ; 设置鼠标为屏幕坐标模式
     CoordMode("Mouse", "Screen")
     MouseMove(1480, 1000)
     Click       
-    BinGe()
+    MeiKeDu_N()
     MouseMove(700, 200)
-    Click       
+    Sleep(200)
+    Click
 }
-
-

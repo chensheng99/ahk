@@ -5,8 +5,8 @@ PressCtrlShiftAltA() {
     Send("{Ctrl down}{Shift down}{Alt down}a{Alt up}{Shift up}{Ctrl up}")
 }
 
-; 美客多-女的导出
-MeiKeDu_N() {
+; 美客多-男的导出
+MeiKeDu_M() {
     ; 第一次点击：X=1400, Y=275
     MouseMove(1400, 250) ; 移动鼠标到 X=1400, Y=275
     Sleep(100) ; 等待鼠标稳定
@@ -17,7 +17,7 @@ MeiKeDu_N() {
     Sleep(100) ; 稍作等待
 
     ; 第二次点击：X=1400, Y=400
-    MouseMove(1400, 470) ; 移动鼠标到 X=1400, Y=400
+    MouseMove(1400, 551) ; 移动鼠标到 X=1400, Y=400
     Sleep(100)
     Click               ; 模拟点击
 
@@ -29,7 +29,7 @@ MeiKeDu_N() {
     Sleep(200)
     PressCtrlShiftAltA()
 
-    Sleep(2500)
+    Sleep(3000)
     ; 第二次点击：X=1400, Y=400
     MouseMove(1570, 960) ; 移动鼠标到 X=1400, Y=400
     Sleep(100)
@@ -41,12 +41,12 @@ MeiKeDu_N() {
     Click               ; 模拟点击
 }
 
-F6:: {
+^Numpad2:: {
     ; 设置鼠标为屏幕坐标模式
     CoordMode("Mouse", "Screen")
     MouseMove(1480, 1000)
     Click       
-    MeiKeDu_N()
+    MeiKeDu_M()
     MouseMove(700, 200)
     Sleep(200)
     Click
