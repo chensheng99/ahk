@@ -7,15 +7,13 @@ PressCtrlShiftAltA() {
 
 ; 取消选择图层
 quxiaoxuanze() {
-    ; 按下alt
-    Send("!")
-    Sleep(100)
+    ; 按下alt+s
+    Send("!s")
+    Sleep(300)
     ; 按下s
     Send("s")
     Sleep(100)
-    ; 按下s
-    Send("s")
-    Sleep(100)
+    Send("v")
 }
 
 ; 美客多-男的导出
@@ -34,7 +32,7 @@ MeiKeDu_M() {
     Sleep(200) ; 稍作等待
 
     ; 第二次点击：X=1400, Y=400
-    MouseMove(1400, 980) ; 移动鼠标到 X=1400, Y=400
+    MouseMove(1400, 1000) ; 移动鼠标到 X=1400, Y=400
     Sleep(200)
     Click               ; 模拟点击
 

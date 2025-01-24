@@ -1,15 +1,13 @@
 ﻿#Requires AutoHotkey v2.0
 ; 取消选择图层
 quxiaoxuanze() {
-    ; 按下alt
-    Send("!")
-    Sleep(100)
+    ; 按下alt+s
+    Send("!s")
+    Sleep(300)
     ; 按下s
     Send("s")
     Sleep(100)
-    ; 按下s
-    Send("s")
-    Sleep(100)
+    Send("v")
 }
 ^Numpad0:: {
     ; 使用窗口类名
