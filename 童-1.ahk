@@ -4,7 +4,16 @@
 PressCtrlShiftAltA() {
     Send("{Ctrl down}{Shift down}{Alt down}a{Alt up}{Shift up}{Ctrl up}")
 }
-
+; 取消选择图层方法
+quxiaoxuanze() {
+    ; 按下alt+s
+    Send("!s")
+    Sleep(300)
+    ; 按下s
+    Send("s")
+    Sleep(100)
+    Send("v")
+}
 ; 童
 MeiKeDu_T() {
     ; 第一次点击：X=1400, Y=275
@@ -38,28 +47,25 @@ MeiKeDu_T() {
     Sleep(200)
     PressCtrlShiftAltA()
 
-    Sleep(3200)
-    ; 第二次点击：X=1400, Y=400
-    MouseMove(1570, 960) ; 移动鼠标到 X=1400, Y=400
+    Sleep(2000)
+
+    MouseMove(1500, 910) ; 移动鼠标到 X=1400, Y=400
     Sleep(200)
     Click               ; 模拟点击
 
-    ; 第二次点击：X=1400, Y=400
-    MouseMove(190, 100) ; 移动鼠标到 X=1400, Y=400
-    Sleep(200)
-    Click               ; 模拟点击
 
-    MouseMove(710,270)
+    ; 按下tab键
+    Sleep(200)
+    Send("{Tab}")
+    ; 按下回车键
+    Sleep(200)
+    Send("{Enter}")
 }
 
-!z:: {
+^Numpad1:: {
     ; 设置鼠标为屏幕坐标模式
     CoordMode("Mouse", "Screen")
-    MouseMove(1480, 1000)
-    Click       
+    quxiaoxuanze()
     Sleep(300)
     MeiKeDu_T()
-    MouseMove(700, 200)
-    Sleep(200)
-    Click
 }

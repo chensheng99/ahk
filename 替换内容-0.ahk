@@ -14,13 +14,14 @@ quxiaoxuanze() {
     WinActivate("ahk_class Photoshop")  ; 激活 Photoshop 窗口
     ; 设置鼠标为屏幕坐标模式
     CoordMode("Mouse", "Screen")
-    ; MouseMove(1480, 1000)
-    ; Click
-    ; Sleep(200)
-    ; MouseMove(1400, 240)
-    quxiaoxuanze()
+    MouseMove(1400, 1000)
+    Click
     Sleep(200)
-    MouseMove(1400, 210)
+    ; MouseMove(1400, 240)
+    ; quxiaoxuanze()
+    ; Sleep(200)
+    ; MouseMove(1400, 210)
+    MouseMove(1400, 230)
     Sleep(200)
     Click
     Sleep(200)
