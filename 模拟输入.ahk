@@ -20,7 +20,7 @@
     y := 150  ; 初始 Y 坐标为 150
     
     ; 循环执行鼠标移动和等待
-    Loop CS.Value  ; 循环18次，共两行
+    Loop CS.Value  ; 循环次，共两行
     {
         MouseMove(x, y)  ; 移动鼠标到指定坐标
         Sleep(1000)  ; 等待1秒

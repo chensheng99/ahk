@@ -54,10 +54,10 @@ WeiYi() {
     Click               ; 点击导出
 
     ; 按下tab键
-    Sleep(200)
+    Sleep(500)
     Send("{Tab}")
     ; 按下回车键
-    Sleep(200)
+    Sleep(500)
     Send("{Enter}")
     ; Sleep(200)
     ; Send("!{Up}") ; Alt + ↑ 返回上一层文件夹
